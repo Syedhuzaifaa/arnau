@@ -5,13 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arnau Criminal Defense</title>
-    <!-- link to the local stylesheet (save the CSS part below as /style.css) -->
     <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
     <!-- ===== NAVBAR ===== -->
-
     <!-- ===== HERO / INTRO ===== -->
     <main>
         <section class="intro-section">
@@ -19,23 +17,50 @@
                 <div class="site-container">
                     <nav class="site-navbar">
                         <div class="site-navbar-inner">
-                            <a class="brand" href="#">
+                            <a class="brand" href="/">
                                 <img src="/images/logo2.png" alt="Arnau logo" width="200" height="70" />
                             </a>
-
-                            <!-- aria-expanded="false" aria-controls="main-nav"
-                                data-target="#main-nav" -->
-                            <button class="nav-toggle" 
-                                >
+                            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav"
+                                data-target="#main-nav">
                                 <span class="nav-toggle-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Toggle navigation</span>
                             </button>
-                        </div>
 
-                        <div id="main-nav" class="nav-collapse" hidden>
                         </div>
+                        <div id="main-nav" class="nav-collapse offcanvas" hidden>
+                            <button class="offcanvas-close" aria-label="Close menu">×</button>
+
+                            <ul class="menu">
+                                <li><a href="/">Home</a></li>
+
+                                <li class="has-sub">
+                                    <span class="menu-heading">Practice Areas</span>
+                                    <ul class="sub-menu">
+                                        <li><a href="#dui">DUI</a></li>
+                                        <li><a href="#domestic-battery">Domestic Battery</a></li>
+                                        <li><a href="#drug-offenses">Drug Offenses</a></li>
+                                        <li><a href="#burglary">Burglary</a></li>
+                                        <li><a href="#theft">Theft</a></li>
+                                        <li><a href="#probation-violations">Probation Violations</a></li>
+                                        <li><a href="#driving-offenses">Driving Offenses</a></li>
+                                        <li><a href="#expunctions-sealing">Expunctions &amp; Sealing</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#listen    ">About</a></li>
+                                <li><a href="#if-you-are-arrested">If You Are Arrested</a></li>
+                                <li><a href="#review">Reviews</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                            <div class="menu-footer">
+                                <img src="/images/logo2.png" alt="Firm logo" width="220" height="80">
+                            </div>
+                        </div>
+                        <div id="nav-backdrop" class="offcanvas-backdrop" hidden></div>
                     </nav>
                 </div>
+            </header>
+
             </header>
             <div class="site-container bill-container">
                 <div class="grid">
@@ -53,7 +78,6 @@
             </div>
         </section>
 
-        <!-- ===== SMALL INTRO / IMAGE + TEXT ===== -->
         <section class="defence-section">
             <div class="site-container">
                 <div class="grid grid--gutter">
@@ -73,11 +97,8 @@
             </div>
         </section>
 
-        <!-- ===== SERVICE LIST (repeating pattern) ===== -->
-        <!-- For each service we use a service-card with grid columns -->
-
         <section class="services">
-            <div class="site-container-fluid d-flex-c">
+            <div class="site-container-fluid d-flex-c" id="dui">
                 <!-- DUI -->
                 <article class="site-container service-card grid grid--gutter ">
                     <div class="grid__item grid__item--12">
@@ -107,7 +128,7 @@
                     </div>
                 </article>
             </div>
-            <div class="site-container-fluid d-flex-c ltGreen">
+            <div class="site-container-fluid d-flex-c ltGreen" id="domestic-battery">
 
                 <!-- DOMESTIC BATTERY -->
                 <article class="site-container service-card grid grid--gutter bg-muted">
@@ -141,7 +162,7 @@
                     </div>
                 </article>
             </div>
-            <div class="site-container-fluid d-flex-c ltGrey">
+            <div class="site-container-fluid d-flex-c ltGrey" id="drug-offenses">
 
                 <!-- more service sections follow the same pattern -->
 
@@ -177,7 +198,7 @@
                     </div>
                 </article>
             </div>
-            <div class="site-container-fluid d-flex-c">
+            <div class="site-container-fluid d-flex-c" id="burglary">
 
                 <!-- BURGLARY -->
                 <article class="site-container service-card grid grid--gutter">
@@ -212,7 +233,7 @@
                     </div>
                 </article>
             </div>
-            <div class="site-container-fluid d-flex-c  ltGreen">
+            <div class="site-container-fluid d-flex-c  ltGreen" id="theft">
 
                 <!-- THEFT -->
                 <article class="site-container service-card grid grid--gutter bg-muted">
@@ -243,7 +264,7 @@
                     </div>
                 </article>
             </div>
-            <div class="site-container-fluid d-flex-c ltGrey">
+            <div class="site-container-fluid d-flex-c ltGrey" id="probation-violations">
 
                 <!-- PROBATION VIOLATIONS -->
                 <article class="site-container service-card grid grid--gutter">
@@ -278,7 +299,7 @@
                     </div>
                 </article>
             </div>
-            <div class="site-container-fluid d-flex-c">
+            <div class="site-container-fluid d-flex-c" id="driving-offenses">
 
                 <!-- DRIVING OFFENSES -->
                 <article class="site-container service-card grid grid--gutter">
@@ -311,7 +332,7 @@
                     </div>
                 </article>
             </div>
-            <div class="site-container-fluid d-flex-c ltGreen">
+            <div class="site-container-fluid d-flex-c ltGreen" id="expunctions-sealing">
 
                 <!-- EXPUNCTIONS & SEALING -->
                 <article class="site-container service-card grid grid--gutter bg-muted">
@@ -368,7 +389,7 @@
         </section>
 
         <!-- ===== LISTEN SECTION ===== -->
-        <section class="listen-section">
+        <section class="listen-section" id="listen">
             <div class="site-container-fluid">
                 <div class="grid">
                     <div class="grid__item grid__item--3 p-0">
@@ -428,15 +449,15 @@
         </section>
 
         <!-- ===== CONTACT + MAP ===== -->
-          <section class="reviwe-section bg-review">
+        <section class="reviwe-section bg-review" id="review">
             <div class="site-container">
-               <div class="p100">
-                 <span>Review</span>
-               </div>
+                <div class="p100">
+                    <span>Review</span>
+                </div>
             </div>
         </section>
 
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
             <div class="site-container">
                 <div class="grid grid--gutter">
                     <div class="grid__item grid__item--6">
@@ -472,7 +493,8 @@
             <div class="grid grid--gutter">
                 <div class="grid__item grid__item--6">
                     <img src="/images/logo2.png" alt="logo" class="footer-logo" />
-                    <p class="footer-text">&copy;<span id="copyright-year"></span> Law Office of William Arnau PLLC Legal Notice</p>
+                    <p class="footer-text">&copy;<span id="copyright-year"></span> Law Office of William Arnau PLLC
+                        Legal Notice</p>
                 </div>
                 <div class="grid__item grid__item--6 left-intro">
                     <p class="footer-text">LEGAL NOTICE The hiring of a lawyer is an important decision that should not
@@ -490,30 +512,74 @@
 
     <script>
         (function () {
-            // Simple accessible navbar collapse/toggle
             const toggles = document.querySelectorAll('.nav-toggle');
+            const drawer = document.querySelector('#main-nav');
+            const backdrop = document.querySelector('#nav-backdrop');
+            const closeBtn = drawer?.querySelector('.offcanvas-close');
+
+            function openDrawer(btn) {
+                if (!drawer) return;
+                drawer.hidden = false;
+                backdrop.hidden = false;
+
+                const isOpen = drawer.classList.add('open');
+                btn?.setAttribute('aria-expanded', 'true');
+                requestAnimationFrame(() => drawer.classList.add('animate'));
+                backdrop.classList.add('open');
+
+                document.body.classList.add('no-scroll');
+                const firstLink = drawer.querySelector('a, button');
+                firstLink && firstLink.focus();
+            }
+
+            function closeDrawer(btn) {
+                if (!drawer) return;
+                drawer.classList.remove('animate');
+                drawer.classList.remove('open');
+                backdrop.classList.remove('open');
+                btn?.setAttribute('aria-expanded', 'false');
+
+                setTimeout(() => {
+                    drawer.hidden = true;
+                    backdrop.hidden = true;
+                    document.body.classList.remove('no-scroll');
+                }, 200);
+            }
+
             toggles.forEach(btn => {
                 const targetSelector = btn.dataset.target;
                 const target = targetSelector ? document.querySelector(targetSelector) : null;
 
                 btn.addEventListener('click', () => {
                     if (!target) return;
-                    const isOpen = target.classList.toggle('open');
-                    // manage aria-expanded and hidden attribute
-                    btn.setAttribute('aria-expanded', isOpen);
-                    if (isOpen) {
-                        target.hidden = false;
-                        // small animation
-                        requestAnimationFrame(() => target.classList.add('animate'));
-                    } else {
-                        target.classList.remove('animate');
-                        // wait for animation then hide
-                        setTimeout(() => (target.hidden = true), 200);
-                    }
+                    const isOpen = target.classList.contains('open');
+                    if (isOpen) closeDrawer(btn); else openDrawer(btn);
                 });
+            });
+
+            // Close helpers
+            closeBtn && closeBtn.addEventListener('click', () => {
+                const btn = document.querySelector('.nav-toggle'); closeDrawer(btn);
+            });
+            backdrop && backdrop.addEventListener('click', () => {
+                const btn = document.querySelector('.nav-toggle'); closeDrawer(btn);
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && drawer.classList.contains('open')) {
+                    const btn = document.querySelector('.nav-toggle'); closeDrawer(btn);
+                }
+            });
+
+            // Close after clicking a link
+            drawer && drawer.addEventListener('click', (e) => {
+                const a = e.target.closest('a');
+                if (a) {
+                    const btn = document.querySelector('.nav-toggle'); closeDrawer(btn);
+                }
             });
         })();
     </script>
+
 </body>
 
 </html>
