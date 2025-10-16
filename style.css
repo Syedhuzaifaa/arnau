@@ -360,7 +360,7 @@ li a {
 }
 
 .nav-collapse {
-      min-height: 100% !important;
+      min-height: 100vh !important;
   width: 20%;
 }
 
