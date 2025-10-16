@@ -215,7 +215,7 @@ img {
 .offcanvas-backdrop {
   position: fixed;
   inset: 0;
-      height: 100vh !important;
+      height: 100% !important;
   background: rgba(0, 0, 0, 0.45);
   opacity: 0;
   transition: opacity 250ms ease-in-out;
@@ -360,7 +360,7 @@ li a {
 }
 
 .nav-collapse {
-      height: 100vh !important;
+      height: 100% !important;
   width: 20%;
 }
 
