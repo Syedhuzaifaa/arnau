@@ -1082,7 +1082,7 @@ footer {
       flex-direction: column-reverse;
 }
 }
-@media (max-width: 768px) and (min-width: 450px) {
+@media (max-width: 768px) and (min-width: 500px) {
   .img-case{
     width: 50%;
   }
