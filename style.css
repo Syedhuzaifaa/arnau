@@ -363,7 +363,9 @@ li a {
 .nav-collapse {
   /* padding-bottom: 100px; */
   overflow: hidden;
-  height: 100lvh;
+  height: 100%;
+  min-height: 100svh;
+  max-height: 100lvh;
   width: 20%;
 }
 
