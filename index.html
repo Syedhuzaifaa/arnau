@@ -1,34 +1,35 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Arnau Criminal Defense</title>
-        <link rel="icon" href="/images/favicon.png" sizes="any">
-        <link rel="stylesheet" href="/style.css?v=2" />
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arnau Criminal Defense</title>
+    <link rel="icon" href="/images/favicon.png" sizes="any">
+    <link rel="stylesheet" href="/style.css?v=2" />
+</head>
 
-    <body>
-        <!-- ===== NAVBAR ===== -->
-        <!-- ===== HERO / INTRO ===== -->
-        <main>
-            <section class="intro-section">
-                <header class="site-header">
-                    <div class="site-container">
-                        <nav class="site-navbar">
-                            <div class="site-navbar-inner">
-                                <a class="brand" href="/">
-                                    <img src="/images/logo2.png" alt="Arnau logo" width="200" height="70" />
-                                </a>
-                                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav"
-                                    data-target="#main-nav">
-                                    <span class="nav-toggle-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Toggle navigation</span>
-                                </button>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <!-- ===== HERO / INTRO ===== -->
+    <main>
+        <section class="intro-section">
+            <header class="site-header">
+                <div class="site-container">
+                    <nav class="site-navbar">
+                        <div class="site-navbar-inner">
+                            <a class="brand" href="/">
+                                <img src="/images/logo2.png" alt="Arnau logo" width="200" height="70" />
+                            </a>
+                            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav"
+                                data-target="#main-nav">
+                                <span class="nav-toggle-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Toggle navigation</span>
+                            </button>
 
-                            </div>
-                            <div id="main-nav" class="nav-collapse offcanvas" hidden>
+                        </div>
+                        <div id="main-nav" class="nav-collapse offcanvas" hidden>
+                            <div class="">
                                 <button class="offcanvas-close" aria-label="Close menu">×</button>
 
                                 <ul class="menu">
@@ -53,14 +54,15 @@
                                     <li><a href="#review">Reviews</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                 </ul>
-                                <div class="menu-footer">
-                                    <img src="/images/logo2.png" alt="Firm logo" width="220" height="80">
-                                </div>
                             </div>
-                            <div id="nav-backdrop" class="offcanvas-backdrop" hidden></div>
-                        </nav>
-                    </div>
-                </header>
+                            <div class="menu-footer">
+                                <img src="/images/logo2.png" alt="Firm logo" width="220" height="80">
+                            </div>
+                        </div>
+                        <div id="nav-backdrop" class="offcanvas-backdrop" hidden></div>
+                    </nav>
+                </div>
+            </header>
 
             </header>
             <div class="site-container bill-container">
@@ -594,20 +596,20 @@
             });
         })();
     </script>
-<script>
-  window.addEventListener("scroll", () => {
-    const navToggle = document.querySelector(".nav-toggle");
-    if (!navToggle) return;
+    <script>
+        window.addEventListener("scroll", () => {
+            const navToggle = document.querySelector(".nav-toggle");
+            if (!navToggle) return;
 
-    // If the user scrolled below the first viewport
-    if (window.scrollY > window.innerHeight) {
-      navToggle.classList.add("scrolled");
-    } else {
-      navToggle.classList.remove("scrolled");
-    }
-  });
-</script>
-<!-- <script>
+            // If the user scrolled below the first viewport
+            if (window.scrollY > window.innerHeight) {
+                navToggle.classList.add("scrolled");
+            } else {
+                navToggle.classList.remove("scrolled");
+            }
+        });
+    </script>
+    <!-- <script>
   function setLockedVH() {
     const vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
