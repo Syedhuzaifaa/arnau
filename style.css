@@ -362,12 +362,12 @@ li a {
 
 .nav-collapse {
   overflow: hidden;
-  /* min-height: 100 !important; */
+  height: -webkit-fill-available;
   width: 20%;
 }
 
 .nav-collapse.open {
-  /* display: block; */
+  display: block;
 }
 
 .pb-87 {
