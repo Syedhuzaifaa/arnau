@@ -1120,6 +1120,7 @@ footer {
   .nav-collapse {
     overflow: hidden;
   height: 100svh;
+  max-height: 100lvh;
     display: grid;
     align-content: space-between;
 
