@@ -1384,3 +1384,39 @@ h2 {
       padding-right: 46px;
 
 }
+.offcanvas {
+  position: fixed !important;
+  inset: 0 0 0 auto !important;
+  width: 320px !important;
+  max-width: 85vw !important;
+  background: #0d6c28 !important;
+  color: #fff !important;
+  transform: translateX(100%) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 24px 20px 110px !important;
+  box-shadow: -6px 0 20px rgba(0, 0, 0, 0.25) !important;
+  z-index: 1001 !important;
+  /* Added height: 100dvh to prevent shifting on mobile scroll */
+  height: 100dvh !important;
+  /* transition: transform 250ms ease-in-out !important; */
+}
+
+.offcanvas-backdrop {
+  position: fixed !important;
+  inset: 0 !important;
+  /* Changed from 100vh to 100dvh for proper mobile viewport handling */
+  min-height: 100dvh  !important;
+  background: rgba(0, 0, 0, 0.45) !important;
+  opacity: 0 !important;
+  transition: opacity 250ms ease-in-out !important;
+  z-index: 1000 !important;
+}
+
+/* Uncommented and fixed body.no-scroll to prevent background scroll */
+body.no-scroll {
+  overflow: hidden !important;
+  position: fixed !important;
+  width: 100% !important;
+  height: 100dvh !important;
+}
