@@ -361,7 +361,8 @@ li a {
 }
 
 .nav-collapse {
-  /* min-height: 100dvh !important;s */
+  overflow: hidden;
+  min-height: 100dvh !important;
   width: 20%;
 }
 
@@ -1116,14 +1117,14 @@ footer {
     padding-bottom: 30px;
 
   }
-
+/* 
   .nav-collapse {
     overflow: hidden;
     max-height: 100%;
     display: grid;
     align-content: space-between;
 
-  }
+  } */
 
   .grid__item--8.pl-50.pt-4 {
     padding-right: 12px !important;
