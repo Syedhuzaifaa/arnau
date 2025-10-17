@@ -1105,19 +1105,8 @@ footer {
       padding-bottom: 30px;
 
 }
-/* .nav-collapse,
-.offcanvas,
-.offcanvas-backdrop {
-  height: calc(var(--vh) * 100);
-} */
-.offcanvas {
-  padding: 24px 20px; /* 110px hatao ya kam karo */
-  display: flex;
-  flex-direction: column;
-}
-.offcanvas .menu {
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+.nav-collapse{
+  overflow: hidden;
 }
 
   .grid__item--8.pl-50.pt-4 {
