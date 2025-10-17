@@ -1105,6 +1105,12 @@ footer {
       padding-bottom: 30px;
 
 }
+.nav-collapse,
+.offcanvas,
+.offcanvas-backdrop {
+  height: calc(var(--vh) * 100);
+}
+
   .grid__item--8.pl-50.pt-4 {
     padding-right: 12px !important;
 }
@@ -1383,15 +1389,4 @@ h2 {
 .grid__item--8.pl-50.pt-4{
       padding-right: 46px;
 
-}
-.nav-collapse {
-  position: fixed;
-  inset: 0 0 0 auto; /* top:0; right:0; bottom:0; */
-  width: 20rem;      /* ya jo bhi width chahiye */
-  /* NO min-height/height using vh/dvh */
-}
-.offcanvas-backdrop {
-  position: fixed;
-  inset: 0;
-  /* NO min-height/height using vh/dvh */
 }
