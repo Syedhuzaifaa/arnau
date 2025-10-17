@@ -1384,3 +1384,14 @@ h2 {
       padding-right: 46px;
 
 }
+.nav-collapse {
+  position: fixed;
+  inset: 0 0 0 auto; /* top:0; right:0; bottom:0; */
+  width: 20rem;      /* ya jo bhi width chahiye */
+  /* NO min-height/height using vh/dvh */
+}
+.offcanvas-backdrop {
+  position: fixed;
+  inset: 0;
+  /* NO min-height/height using vh/dvh */
+}
