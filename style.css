@@ -300,10 +300,10 @@ li a {
 }
 
 .nav-toggle {
-  right: 16%;
+  right: 7%;
   position: fixed;
-  width: 65px;
-  height: 44px;
+  width: 47px;
+  height: 39px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -328,9 +328,9 @@ li a {
 
 .nav-toggle-icon {
   display: inline-block;
-  width: 60px;
-  height: 7px;
-  border-radius: 16px;
+  width: 33px;
+  height: 5px;
+  border-radius: 1px;
   background: #fff;
   position: relative;
 }
@@ -340,18 +340,18 @@ li a {
   content: "";
   position: absolute;
   left: 0;
-  width: 60px;
-  height: 7px;
-  border-radius: 16px;
+  width: 33px;
+  height: 5px;
+  border-radius: 1px;
   background: #fff;
 }
 
 .nav-toggle-icon::before {
-  top: -13px;
+  top: -11px;
 }
 
 .nav-toggle-icon::after {
-  top: 13px;
+  top: 11px;
 }
 
 .site-navbar-inner {
@@ -360,14 +360,17 @@ li a {
 }
 
 .nav-collapse {
-      min-height: 100% !important;
+      min-height: 100dvh !important;
   width: 20%;
 }
 
 .nav-collapse.open {
   display: block;
 }
+.pb-87{
+      padding-bottom: 82px;
 
+}
 /* .nav-toggle[aria-expanded="true"] .nav-toggle-icon {
   background: transparent;
 } */
@@ -1074,7 +1077,7 @@ footer {
 }
 .nav-toggle.scrolled {
   background: #0000003d;
-  border-radius: 7px;
+  border-radius: 4px;
   transition: background 0.3s ease, border-radius 0.3s ease;
 }
 @media (max-width: 768px) and (min-width: 300px) {
@@ -1098,6 +1101,10 @@ footer {
   body {
     overflow-x: hidden;
   }
+  .pb-87{
+      padding-bottom: 30px;
+
+}
   .grid__item--8.pl-50.pt-4 {
     padding-right: 12px !important;
 }
@@ -1236,12 +1243,13 @@ footer {
   }
 
   .answer-text-number {
-    line-height: 44px;
+    line-height: 33px;
     font-size: 32px;
   }
 
   .answer-text-call {
     font-size: 23px;
+    line-height: 33px;
   }
 
   .answer-text-trust {
@@ -1299,11 +1307,11 @@ footer {
 
   .nav-toggle-icon::before,
   .nav-toggle-icon::after {
-    width: 43px;
+    width: 37px;
   }
 
   .nav-toggle-icon {
-    width: 43px;
+    width: 37px;
   }
 }
 
