@@ -609,20 +609,7 @@
             }
         });
     </script>
-    <script>
-        let scrollY = 0;
-        function openNav() {
-            scrollY = window.scrollY;
-            document.body.classList.add('offcanvas-open');
-            document.body.style.top = `-${scrollY}px`;
-        }
-        function closeNav() {
-            document.body.classList.remove('offcanvas-open');
-            document.body.style.top = '';
-            window.scrollTo(0, scrollY);
-        }
 
-    </script>
 </body>
 
 </html>
