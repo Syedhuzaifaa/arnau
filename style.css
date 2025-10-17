@@ -361,8 +361,8 @@ li a {
 }
 
 .nav-collapse {
-  overflow: hidden;
-  min-height: 100dvh !important;
+  /* overflow: hidden; */
+  /* min-height: 100dvh !important; */
   width: 20%;
 }
 
@@ -1107,6 +1107,56 @@ footer {
   }
 
 }
+/* OFFCANVAS PANEL — no vh/svh/lvh anywhere */
+.offcanvas,
+.nav-collapse {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;      /* ← bottom pin = full height without vh */
+  left: auto;
+
+  width: 320px;
+  max-width: 85vw;
+
+  background: #0d6c28;
+  color: #fff;
+
+  transform: translateX(100%);   /* your slide-in will handle this */
+  display: flex;
+  flex-direction: column;
+
+  padding: 24px 20px;            /* bottom 110px hata diya */
+  box-shadow: -6px 0 20px rgba(0,0,0,.25);
+  z-index: 1001;
+}
+
+/* Backdrop: also no vh, just pin all sides */
+.offcanvas-backdrop {
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(0,0,0,.45);
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  z-index: 1000;
+}
+
+/* Footer bottom par rahe, absolute NAHIN */
+.menu-footer { position: static; margin-top: auto; }
+
+/* List scroll kare; panel ki height kabhi change na ho */
+.menu {
+  flex: 1 1 auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Jank ka ek reason ye rules thay — inhe HATA DO agar kahin bache hon: */
+/*
+.nav-collapse { min-height:100vh|100dvh; overflow:hidden; max-height:100%;
+                display:grid; align-content:space-between; }
+.offcanvas-backdrop { min-height:100vh !important; }
+*/
 
 @media (max-width: 1200px) and (min-width: 300px) {
   body {
@@ -1125,6 +1175,56 @@ footer {
     align-content: space-between;
 
   } */
+/* OFFCANVAS PANEL — no vh/svh/lvh anywhere */
+.offcanvas,
+.nav-collapse {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;      /* ← bottom pin = full height without vh */
+  left: auto;
+
+  width: 320px;
+  max-width: 85vw;
+
+  background: #0d6c28;
+  color: #fff;
+
+  transform: translateX(100%);   /* your slide-in will handle this */
+  display: flex;
+  flex-direction: column;
+
+  padding: 24px 20px;            /* bottom 110px hata diya */
+  box-shadow: -6px 0 20px rgba(0,0,0,.25);
+  z-index: 1001;
+}
+
+/* Backdrop: also no vh, just pin all sides */
+.offcanvas-backdrop {
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(0,0,0,.45);
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  z-index: 1000;
+}
+
+/* Footer bottom par rahe, absolute NAHIN */
+.menu-footer { position: static; margin-top: auto; }
+
+/* List scroll kare; panel ki height kabhi change na ho */
+.menu {
+  flex: 1 1 auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Jank ka ek reason ye rules thay — inhe HATA DO agar kahin bache hon: */
+/*
+.nav-collapse { min-height:100vh|100dvh; overflow:hidden; max-height:100%;
+                display:grid; align-content:space-between; }
+.offcanvas-backdrop { min-height:100vh !important; }
+*/
 
   .grid__item--8.pl-50.pt-4 {
     padding-right: 12px !important;
